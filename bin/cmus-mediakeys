@@ -19,14 +19,11 @@ function send_command(command){
 
 
 mediakeys.on('play', function () {
-    console.log('player play/pause');
     send_command('player-pause');
 })
 mediakeys.on('next', function () {
-    console.log('player next');
     send_command('player-next');
 })
 mediakeys.on('back', function () {
-    console.log('player back');
     send_command('player-prev');
 })
